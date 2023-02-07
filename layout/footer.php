@@ -69,6 +69,11 @@
           </div>
         </div>
       </div>
+      <div class="row justify-content-center">
+      <?php
+       echo "Last modified on: " . date("l, jS \of F Y, h:i A", filemtime(__FILE__));
+      ?>
+      </div>
     </div>
 </footer>
 

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style-Andrei.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>Skate Shop - Home Page</title>
+  <title><?php echo $title;?></title>
 
   <link rel = "icon" href = "images/Skatefavicon-16x16.png" type = "image/x-icon">
 </head>
@@ -33,7 +33,7 @@
               <a class="nav-link active" aria-current="page" href="ex1.php">Exercise 1</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Blog</a>
+              <a class="nav-link active" aria-current="page" href="variables.php">Exercise 3</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Contact</a>
