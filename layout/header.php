@@ -36,7 +36,7 @@
               <a class="nav-link active" aria-current="page" href="variables.php">Exercise 3</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              <a class="nav-link active" aria-current="page" href="controlflow.php">Exercise 4</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">About&nbsp;Us</a>

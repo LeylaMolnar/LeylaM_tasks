@@ -71,7 +71,10 @@
       </div>
       <div class="row justify-content-center">
       <?php
-       echo "Last modified on: " . date("l, jS \of F Y, h:i A", filemtime(__FILE__));
+      
+      $fname = basename($_SERVER['PHP_SELF']);
+      $last_modified = filemtime($fname);
+      echo "Last modified on: " . date('l jS \o\f F Y, h:i:s A', $last_modified);
       ?>
       </div>
     </div>
