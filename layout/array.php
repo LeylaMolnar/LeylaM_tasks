@@ -54,8 +54,9 @@ print_r($colors);
 <?php
 $temperature = array(78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73);
 echo "<hr><h2> Calculation average temperature: </h2>";
-$month_temp = "78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 81, 76, 73,
-68, 72, 73, 75, 65, 74, 63, 67, 65, 64, 68, 73, 75, 79, 73";
+$month_temp = "78, 60, 62, 68, 71, 68, 73,
+85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 
+74, 62, 62, 65, 64, 68, 73, 75, 79, 73";
 // what is explode and what does the below code do? : 
 //The explode function breaks a string into an array along a specified separator
 $temp_array = explode(',', $month_temp);
@@ -64,27 +65,24 @@ $tot_temp = 0;
 //The count function returns the number of elements in an array
 $temp_array_length = count($temp_array);
 //Sums all values in $temp_array
-foreach($temp_array as $temp)
-{
- $tot_temp += $temp;
+foreach ($temp_array as $temp) {
+    $tot_temp += $temp;
 }
- $avg_high_temp = $tot_temp/$temp_array_length;
- echo "Average Temperature is : ".$avg_high_temp."
-"; 
+$avg_high_temp = $tot_temp / $temp_array_length;
+echo "Average Temperature is : " . $avg_high_temp . "
+";
 // what does sort do?
 //The sort function orders the values in ascending order
 sort($temp_array);
 echo "<br> List of five lowest temperatures :";
-for ($i=0; $i< 5; $i++)
-{ 
-echo $temp_array[$i].", ";
+for ($i = 0; $i < 5; $i++) {
+    echo $temp_array[$i] . ", ";
 }
 echo "<br>List of five highest temperatures :";
 // explain the following loop
 //Prints the last five values of the array. Since the array was ordered earlier, this prints the 5 highest values.
-for ($i=($temp_array_length-5); $i< ($temp_array_length); $i++)
-{
-echo $temp_array[$i].", ";
+for ($i = ($temp_array_length - 5); $i < ($temp_array_length); $i++) {
+    echo $temp_array[$i] . ", ";
 }
 include "footer.php";
 ?>
