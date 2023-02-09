@@ -39,7 +39,7 @@
               <a class="nav-link active" aria-current="page" href="controlflow.php">Exercise 4</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About&nbsp;Us</a>
+              <a class="nav-link active" aria-current="page" href="array.php">Exercise 5</a>
             </li>
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0 cart">
