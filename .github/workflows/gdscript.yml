@@ -89,4 +89,4 @@ jobs: # The jobs that run in this workflow
               body: `**Welcome**, new contributor!
 
                 Please make sure you've read our [contributing guide](CONTRIBUTING.md) and we look forward to reviewing your Pull request shortly ✨`
-            })
+             })
