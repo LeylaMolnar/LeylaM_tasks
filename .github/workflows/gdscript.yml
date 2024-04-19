@@ -10,6 +10,8 @@ jobs: # The jobs that run in this workflow
     runs-on: ubuntu-latest # This job will run on the latest version of Ubuntu.
     permissions: # This job requires write access to issues in order to add labels and comment.
       issues: write
+    if: github.event_name == 'issues' && github.event.action == 'opened' # Condition to run this job only when an issue is opened
+
     steps: # The "steps" section contains the individual tasks that will be performed in this job.
       - name: attach label to issues # The name of the step
         uses: actions/github-script@v6 # This step uses the "actions/github-script" action to execute a script that adds labels to the issue.
